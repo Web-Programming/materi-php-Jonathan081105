@@ -1,6 +1,6 @@
 <?php
-$keyword= trim{$_GET['keyword']?? ''};
-$kategori = trim($_GET['kategori']?? 'semua');
+$keyword = trim($_GET['keyword'] ?? '');
+$kategori = trim($_GET['kategori'] ?? 'semua');
 ?>
 <!DOCKYYPE html>
 <html lang="id>
@@ -10,7 +10,7 @@ $kategori = trim($_GET['kategori']?? 'semua');
     <title><Materi Dasar PHP form - GET</title>
 </head>
 <body>
-    <h2>1) contoh form GET<//h2>
+    <h2>1 contoh form GET<//h2>
     <form method="GET" action ="">
         <label for="keyword">Keywrord pencarian</label>
         <input id = "keyword" name ="keyword" type = "text"
