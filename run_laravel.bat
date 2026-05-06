@@ -1,0 +1,9 @@
+@echo off
+echo [1/3] Menjalankan Migration...
+php artisan migrate --force
+echo [2/3] Mengisi Data Supplier (Seeder)...
+php artisan db:seed --class=SupplierSeeder
+echo [3/3] Membuka Browser dan Menjalankan Server...
+start http://127.0.0.1:8000/supplier
+php artisan serve
+pause
